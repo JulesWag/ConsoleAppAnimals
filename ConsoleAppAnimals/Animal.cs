@@ -6,23 +6,35 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppAnimals
 {
-    internal class Animal
+    public class Animal
     {
-        private string Name { get; set; }
+        private string Name;
 
-        private void Move()
+        public Animal()
+        {
+            // Constructeur par défaut
+            Name = "Unnamed Animal";
+        }
+
+        public Animal(string name)
+        {
+            // Constructeur avec le nom en paramètre
+            Name = name;
+        }
+
+        public void Move()
         {
             Console.WriteLine("Move");
         }
 
-        private void Sleep()
+        public void Sleep()
         {
             Console.WriteLine("Sleep");
-
-
         }
-
-
-
     }
+
+  
+
+
 }
+
