@@ -8,6 +8,21 @@ namespace ConsoleAppAnimals
 {
     internal class Animal
     {
-        public string Name { get; set; }
+        private string Name { get; set; }
+
+        private void Move()
+        {
+            Console.WriteLine("Move");
+        }
+
+        private void Sleep()
+        {
+            Console.WriteLine("Sleep");
+
+
+        }
+
+
+
     }
 }
