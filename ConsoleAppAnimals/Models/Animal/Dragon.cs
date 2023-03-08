@@ -1,22 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ConsoleAppAnimals.Service;
 
 namespace ConsoleAppAnimals.Models.Animal
 {
-    //Ex2b) creer la classe Dragon
-    internal class Dragon : Animal
+    // Ex2b) creer la classe Dragon
+    internal class Dragon : Animal, IPilotage
     {
+        public Dragon(string name) : base(name)
+        {
+
+        }
+
         public override void Move()
         {
-            Console.WriteLine("Dragon breathes fire");
+            Console.WriteLine($"{Name} is flying and breathing fire!");
         }
 
         public new void Sleep()
         {
-            Console.WriteLine(" Dont woke up the Dragon !");
+            Console.WriteLine("Don't wake up the dragon!");
+        }
+
+        public void Moov()
+        {
+            Console.WriteLine("The dragon is moving!");
         }
     }
 }
