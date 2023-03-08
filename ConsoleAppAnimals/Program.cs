@@ -1,17 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ConsoleAppAnimals.Models.Animal;
 
-namespace ConsoleAppAnimals
-{
+
+
     class Program
     {
         static void Main(string[] args)
         {
-            Animal myAnimal = new Animal("Lion");
+            
 
-            myAnimal.Move(); // Affiche "Move"
-            myAnimal.Sleep(); // Affiche "Sleep"
+     
 
             Console.ReadLine();
         }
     }
-}
+

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppAnimals
+namespace ConsoleAppAnimals.Models.Animal
 {
-    public class Animal
+    //EX2a) mettre en abstract
+    public abstract class Animal
     {
-        private string Name;
+        public string Name {  get;  private set; }
 
         public Animal()
         {
@@ -21,19 +22,16 @@ namespace ConsoleAppAnimals
             // Constructeur avec le nom en paramètre
             Name = name;
         }
+        //EX3a) Overide de la méthode Move et ajout de new pour Sleep
+        public abstract void Move();
 
-        public void Move()
+        public new void Sleep()
         {
-            Console.WriteLine("Move");
-        }
-
-        public void Sleep()
-        {
-            Console.WriteLine("Sleep");
+            Console.WriteLine("ZZZ..zzz");
         }
     }
 
-  
+
 
 
 }
