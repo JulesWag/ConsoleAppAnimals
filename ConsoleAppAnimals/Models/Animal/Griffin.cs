@@ -1,14 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleAppAnimals.Models.Animal
 {
-    //Ex2b) creer classa Griffin
+    //Ex2b) creer classe Griffin
     public class Griffin : Animal
     {
+        public Griffin(string name, string type, int id, int age) : base(name, type, id)
+        {
+            this.Age = age;
+        }
+
+        public int Age { get; set; }
 
         public override void Move()
         {
@@ -17,10 +19,7 @@ namespace ConsoleAppAnimals.Models.Animal
 
         public new void Sleep()
         {
-            Console.WriteLine(" ZZzzz ... ");
+            Console.WriteLine("ZZzzz...");
         }
     }
-
 }
-
-

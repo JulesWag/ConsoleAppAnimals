@@ -6,10 +6,12 @@ namespace ConsoleAppAnimals.Models.Animal
     // Ex2b) creer la classe Dragon
     internal class Dragon : Animal, IPilotage
     {
-        public Dragon(string name) : base(name)
+        public Dragon(string name, string type, int id, int age) : base(name, type, id)
         {
-
+            Age = age;
         }
+
+        public int Age { get; set; }
 
         public override void Move()
         {

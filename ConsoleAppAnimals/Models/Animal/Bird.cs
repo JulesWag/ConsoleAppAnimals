@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppAnimals.Service
+namespace ConsoleAppAnimals.Models.Animal
 {
-    internal interface Ibook
+    internal class Bird
     {
-
     }
 }
