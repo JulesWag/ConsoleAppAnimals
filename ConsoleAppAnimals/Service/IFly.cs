@@ -10,11 +10,7 @@ namespace ConsoleAppAnimals.Service
     {
     void Fly();
     }
-    public class [Name] : [name] Fly {
-    public void Fly()
-    {
-        Console.WriteLine("The [name] is flying.");
-    }
+    
 }
-}
+
 

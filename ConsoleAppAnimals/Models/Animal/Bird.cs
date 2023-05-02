@@ -8,5 +8,6 @@ namespace ConsoleAppAnimals.Models.Animal
 {
     internal class Bird
     {
+        
     }
 }
